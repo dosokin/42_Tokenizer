@@ -3,8 +3,6 @@ pragma solidity ^0.8.20;
 import {ERC721URIStorage, ERC721} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
-import "forge-std/console.sol";
-
 import {DataConsumerV3} from "src/DataConsumerV3.sol";
 
 contract GrillzFarm42 is ERC721URIStorage, DataConsumerV3, Ownable {
@@ -50,7 +48,6 @@ contract GrillzFarm42 is ERC721URIStorage, DataConsumerV3, Ownable {
         _mint(msg.sender, tokenId);
         _setTokenURI(tokenId, farmTokenURI);
 
-        console.log("Farm #", tokenId, " owner:", msg.sender, " farmName: ", farmName, " latitude: ", latitude, " longitude: ", longitude, " buildTime: ", block.timestamp);
         farms[tokenId] = Farm(msg.sender, farmName, latitude, longitude, block.timestamp);
         farmsIds.push(tokenId);
         ownerFarmCount[msg.sender] += 1;
