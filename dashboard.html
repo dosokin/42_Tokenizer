@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="h-auto">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="icon" href="/42_Tokenizer/favicon.ico" type="image/x-icon"/>
+
+  <title>GRILLZ</title>
+
+
+
+
+
+  <script type="module" crossorigin src="/42_Tokenizer/assets/dashboard-uKuXstoI.js"></script>
+  <link rel="modulepreload" crossorigin href="/42_Tokenizer/assets/popup-DYXlcu7j.js">
+  <link rel="modulepreload" crossorigin href="/42_Tokenizer/assets/spin-CpXtSLqD.js">
+  <link rel="modulepreload" crossorigin href="/42_Tokenizer/assets/header-CDlr8DL-.js">
+  <link rel="modulepreload" crossorigin href="/42_Tokenizer/assets/metamask-Cwkkiq1I.js">
+  <link rel="modulepreload" crossorigin href="/42_Tokenizer/assets/statistics-BaWs6h6r.js">
+  <link rel="stylesheet" crossorigin href="/42_Tokenizer/assets/popup-03LOmQA7.css">
+  <link rel="stylesheet" crossorigin href="/42_Tokenizer/assets/spin-CxBB1cLG.css">
+</head>
+
+<body id="body" class="bg-center bg-cover bg-no-repeat bg-[url(/cricket.png)] m-auto w-4/5 xl:w-2/3 flex flex-col h-auto py-5">
+
+<header class="flex flex-col gap-2 md:flex-row items-center md:justify-between align-items-center px-0" >
+
+  <div>
+    <a href="/">
+      <img src="/42_Tokenizer/cricket-blue.png" alt="GRILLZ logo" class="h-20 filter hover:drop-shadow-[0_0_12px_cyan] cursor-pointer!">
+    </a>
+  </div>
+
+  <div id="user-access-container" class="flex items-center gap-2"></div>
+
+</header>
+
+
+<div class="flex gap-8 flex-col h-auto items-center md:overflow-visible my-10 md:my-5 justify-center">
+
+  <p class="text-6xl text-cyan-100 font-extrabold w-full">DASHBOARD</p>
+
+  <div id="main-content" class="grid grid-cols-1 md:grid-cols-2 h-full md:h-3/4 w-full gap-4 my-auto md:overflow-visible no-scrollbar ">
+
+    <div class="justify-between gap-3 flex flex-col inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full h-full col-span-1 text-center  p-4 overflow-visible">
+
+      <div class="flex h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-2xl text-cyan-100 font-bold">CONNECTED AS<br><span id="connected-address" class="text-sm md:text-xs xl:text-base 2xl:text-lg font-extrabold break-all"></span></p>
+      </div>
+
+      <div class="flex h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-2xl text-cyan-100 font-bold"><span id="balance-dashboard"></span> $GRZ</p>
+      </div>
+
+      <button id="airdrop" class="relative w-full h-4/12 cursor-pointer! text-neutral-900 font-bold text-xl inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] flex md:flex-col rounded-xl bg-cyan-200 col-span-1 text-center justify-center p-1 px-3 items-center">CLAIM FARMS REWARDS</button>
+
+      <a href="/farm" id="buyFarm" class="w-full h-4/12 cursor-pointer! text-neutral-900 font-bold text-xl inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] flex md:flex-col rounded-xl bg-cyan-200 col-span-1 text-center justify-center p-1 px-3 items-center">BUILD MY FARM</a>
+
+      <button id="disconnect" class="w-full h-4/12 cursor-pointer! text-neutral-900 font-bold text-xl inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] flex md:flex-col rounded-xl bg-cyan-200 col-span-1 text-center justify-center p-1 px-3 items-center">DISCONNECT</button>
+
+    </div>
+
+
+
+
+    <div class="gap-3 col-span-1 flex flex-col inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full h-full text-center justify-center p-4">
+
+      <div class="w-full text-left px-3">
+        <p class="text-4xl text-cyan-100 font-bold mx-1 mb-2 ">MY STATS</p>
+      </div>
+
+      <div class="flex h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-2xl text-cyan-100 font-bold">FARMER GLOBAL RANK #<span id="farmer-rank" class="text-4xl font-extrabold">16</span></p>
+      </div>
+
+
+      <div class="flex h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-2xl text-cyan-100 font-bold"><span id="farms-count" class="text-4xl font-extrabold">7</span> FARMS BUILT</p>
+      </div>
+
+      <div class="flex h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-2xl text-cyan-100 font-bold"><span id="crickets-count" class="text-4xl font-extrabold"></span> CRICKETS PRODUCED</p>
+      </div>
+
+      <div class="flex h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-2xl text-cyan-100 font-bold"><span id="meals-count" class="text-4xl font-extrabold"></span> MEALS DISTRIBUTED</p>
+      </div>
+
+      <div class="gap-3 flex flex-row h-4/12 items-center inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full col-span-1 text-center justify-center p-4">
+        <p class="text-xl text-cyan-100 font-bold">SHARE ON SOCIALS</p>
+        <div class="flex flex-row gap-1 items-center">
+          <a href="https://instagram.com" class="h-10 w-10"><img class="cursor-pointer!" src="/42_Tokenizer/instagram.png" alt="logo instagram"/></a>
+          <a href="https://x.com" class="h-10 w-10"><img class="cursor-pointer!" src="/42_Tokenizer/twitter.png" alt="logo twitter"/></a>
+          <a href="https://facebook.com" class="h-9 w-9"><img class="cursor-pointer!" src="/42_Tokenizer/facebook.png" alt="logo facebook"/></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="flex flex-col gap-8 items-center w-full">
+
+    <p class="text-5xl text-cyan-100 font-extrabold w-full">MY FARMS</p>
+
+    <table id="owned-farms" class="inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-neutral-900 w-full h-full text-xl text-cyan-100 font-bold">
+
+      <tr class="h-auto inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-t-xl bg-neutral-900 text-3xl text-cyan-100 font-bold">
+        <th class="py-5 rounded-tl-xl">Built on</th>
+        <th>Name</th>
+        <th>Coordinates</th>
+        <th class="rounded-tr-xl">Crickets produced</th>
+      </tr>
+
+    </table>
+
+  </div>
+
+
+</div>
+
+</body>
+
+</html>
