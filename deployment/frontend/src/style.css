@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+* {
+    cursor: default;
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+.notie-background-success {
+    background-color: #009aa3cc !important;
+}
+
+.notie-background-error {
+    background-color: indianred !important;
+}
+
+.th {
+    border-radius: 20%;
+}
+
+.tr {
+    border-radius: 20%;
+}
