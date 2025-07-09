@@ -21,10 +21,10 @@ async function displayConnectedHeader(account){
     userAccessContainer.innerHTML = [
         "<a href='dashboard.html' class=\"cursor-pointer! text-neutral-900 font-bold text-xl inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-cyan-200 col-span-1 text-center justify-center p-4 px-16 items-center\" id=\"dashboardAccess\">MY DASHBOARD</a>",
         "   <a class='cursor-pointer! gap-1 flex flex-row text-neutral-900 font-bold text-xl inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-cyan-200 col-span-1 text-center justify-center p-4 items-center' href='marketplace.html'>",
-        "       <img class='cursor-pointer! h-7 w-7' alt='shopping-cart' src='/shopping-cart.png'/>",
+        "       <img class='cursor-pointer! h-7 w-7' alt='shopping-cart' src='shopping-cart.png'/>",
         "   </a>",
         "<div class=\"gap-1 flex flex-row text-neutral-900 font-bold text-xl inset-shadow-[0_0_12px_cyan] shadow-[0_0_20px_cyan] hover:shadow-[0_0_30px_cyan] rounded-xl bg-cyan-200 col-span-1 text-center justify-center p-4 items-center\">",
-        "   <img alt='wallet' class='h-7 w-7' src='/wallet.png' />",
+        "   <img alt='wallet' class='h-7 w-7' src='wallet.png' />",
         `    <p><span id="balance-header">${balance}</span> $GRZ</p>`,
         "</div>",
     ].join('\n');

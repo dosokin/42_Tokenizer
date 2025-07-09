@@ -2,7 +2,7 @@ import {disconnectMetamask} from "./metamask.js";
 import {getBalance,  getCurrentAddress} from "./utils.js";
 import { getProvider, getSigner} from "./ethClient.js";
 import {claimGrz} from "./claimGrz.js";
-import {getFarmerRank, getOwnerFarmCount, getTotalProduction} from "./statistics.js";
+import {getFarmerProduction, getFarmerRank, getOwnerFarmCount, getTotalProduction} from "./statistics.js";
 
 let currentAccount = null;
 
@@ -36,7 +36,7 @@ async function getStats() {
     const currentAddress = await getCurrentAddress();
 
     const farmCount = await getOwnerFarmCount(currentAddress);
-    const cricketCount = await getTotalProduction(currentAddress);
+    const cricketCount = await getFarmerProduction(currentAddress);
 
     document.getElementById("farms-count").innerText = String(farmCount);
     document.getElementById("crickets-count").innerText = String(cricketCount);

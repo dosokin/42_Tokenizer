@@ -43,7 +43,7 @@ function successAnimation() {
         shapes: ["image"],
         shapeOptions: {
             image: [{
-                src: "/cricket-circle.png",
+                src: "cricket-circle.png",
                 width: 32,
                 height: 32,
             }],
