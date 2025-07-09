@@ -1,9 +1,9 @@
 pragma solidity ^0.8.20;
 
-import {ERC721URIStorage, ERC721} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {ERC721, ERC721URIStorage} from "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import {Ownable} from "lib/openzeppelin-contracts/contracts/access/Ownable.sol";
 
-import {DataConsumerV3} from "src/DataConsumerV3.sol";
+import {DataConsumerV3} from "./DataConsumerV3.sol";
 
 contract GrillzFarm42 is ERC721URIStorage, DataConsumerV3, Ownable {
 
