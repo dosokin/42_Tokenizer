@@ -1,6 +1,7 @@
 broadcast
 cache
 lib
+**/lib
 out
 .gitmodules
 .idea
