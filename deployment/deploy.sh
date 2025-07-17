@@ -4,4 +4,4 @@ curl --create-dirs -o ../lib/chainlink/interfaces/AggregatorV3Interface.sol http
 
 ~/.foundry/bin/forge install OpenZeppelin/openzeppelin-contracts
 
-~/.foundry/bin/forge script --chain sepolia  Grillz.s.sol:GrillzScript --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY # --verify --broadcast
+~/.foundry/bin/forge script --chain sepolia  Grillz.s.sol:GrillzScript --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --verify --broadcast
