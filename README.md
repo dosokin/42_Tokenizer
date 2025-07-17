@@ -59,4 +59,5 @@ GRZ42 is a humanitarian blockchain project developed at 42 School for the Tokeni
 
 ## Deployment
 
-Execute `deployment/deploy.sh`.
+1. Install foundry.
+2. Execute `deployment/deploy.sh`.
