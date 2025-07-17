@@ -20,7 +20,6 @@ GRZ42 is a humanitarian blockchain project designed to fund the creation of cric
 ### GRZ42 Token – Symbolic Royalties
 
 The GRZ42 token is not a currency. It does **not offer financial return**, governance power, or speculative use.  
-Its purpose is **purely symbolic and gamified**.
 
 - GRZ tokens are **distributed daily** to farm NFT holders.
 - The distribution is proportional to the number of farms owned (100,000$GRZ42 / per farm / per day, this overvalued reward amount was choose to facilitate tests and demonstration)
@@ -58,6 +57,18 @@ The system calculates how much ETH is needed to equal 20 USD at the moment of th
 - No registration required.
 - Compatible with MetaMask.
 
+---
+
+## Useful functions
+
+- Grillz42
+  - function claimGrz() public returns (uint256)
+    - Claim daily farm's ownership rewards (100,000$GRZ42/farm/day)
+  - function mintGoldCricket() public
+    - Claim Gold Cricket NFT for 100,000$GRZ42
+- GrillzFarm42
+  - function buildFarm(int64 latitude, int64 longitude, string memory farmName) public payable returns (uint256)
+    - Build a new farm
 ---
 
 ## Conclusion
