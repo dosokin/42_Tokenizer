@@ -50,11 +50,11 @@ GRZ42 is a humanitarian blockchain project developed at 42 School for the Tokeni
 
 ## Smart contract address
 
-- GRZ42 (ERC-20): 0x64a6DC242b70Ca275f214A29bAe3F5f856a02f7A
-  - https://sepolia.etherscan.io/address/0x64a6DC242b70Ca275f214A29bAe3F5f856a02f7A
+- GRZ42 (ERC-20): 0x9f3d7d704f16be30c87623af4dfb64b7e9bf9a14
+  - https://sepolia.etherscan.io/address/0x9f3d7d704f16be30c87623af4dfb64b7e9bf9a14
 
-- GRZFarm42 (ERC-721): 0xFAB00a5639256e0d1fbB2a6dAF4d99a568D28Bbf
-  - https://sepolia.etherscan.io/address/0xFAB00a5639256e0d1fbB2a6dAF4d99a568D28Bbf
+- GRZFarm42 (ERC-721): 0xf9C41db551Ad641c8a00C4d47A39521E091f6b3e
+  - https://sepolia.etherscan.io/address/0xf9C41db551Ad641c8a00C4d47A39521E091f6b3e
 
 
 ## Deployment
